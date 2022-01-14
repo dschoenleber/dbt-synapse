@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from setuptools import find_namespace_packages, setup
+from setuptools import find_packages, setup
 import os
 import re
 
@@ -47,7 +47,7 @@ setup(
     author=", ".join(authors_list),
     author_email="swanson.anders@gmail.com",
     url="https://github.com/dbt-msft/dbt-synapse",
-    packages=find_namespace_packages(include=['dbt', 'dbt.*']),
+    packages=find_packages(),
     include_package_data=True,
     install_requires=[
         "dbt-sqlserver~=1.0.0"
